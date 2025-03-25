@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Formulier</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Neem Contact Op</h2>
+        <p>Ik sta altijd open voor nieuwe kansen en samenwerkingen. Je kunt me bereiken via het onderstaande formulier of via mijn LinkedIn:</p>
+        <a href="https://www.linkedin.com/in/jouw-linkedin-profiel" target="_blank">Bekijk mijn LinkedIn </a> <!-- Zorg ervoor dat je de juiste URL van je LinkedIn-profiel invult -->
+        
+        <form id="contactForm">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="message">Bericht:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+    
+            <button type="submit">Verstuur</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2025 Charles</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
