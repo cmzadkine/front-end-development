@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio van Charles Musukwa – softwaredeveloper in opleiding met passie voor development, design en techniek.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Charles Musukwa">
+  <meta name="robots" content="index, follow">
+
+  <title>Portfolio van Charles Musukwa</title>
+  <link rel="canonical" href="https://www.jouwwebsite.nl/">
+
+  <meta property="og:title" content="Portfolio van Charles Musukwa">
+  <meta property="og:description" content="Ontdek de skills, projecten en ervaring van een jonge softwaredeveloper.">
+  <meta property="og:image" content="images/page_1.webp">
+  <meta property="og:url" content="https://www.jouwwebsite.nl/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Hoofdnavigatie">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#opleiding">Opleiding</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#werkervaring">Werkervaring</a></li>
+        <li><a href="#projecten">Projecten</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Welkom op mijn Portfolio</h1>
+        <p>Ik ben <strong>Charles Musukwa</strong>, 18 jaar oud en eerstejaars student <em>Softwaredeveloper</em> op het Techniek College Rotterdam.
+        Ik hou van hard werken, techniek en sport (vooral voetbal). In mijn vrije tijd werk ik als bezorger en leer ik graag nieuwe technologieën.</p>
+      </div>
+    </section>
+
+    <section id="opleiding">
+      <div class="container">
+        <h2>Opleiding</h2>
+        <ul>
+          <li><strong>Softwaredeveloper (niveau 4)</strong> – Techniek College Rotterdam (2024 - heden)</li>
+          <li><strong>Vmbo-T</strong> – [naam middelbare school], afgerond in 2024</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Mijn Skills</h2>
+        <ul class="skills-list">
+          <li>HTML5</li>
+          <li>CSS3 / SCSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>Java</li>
+          <li>Git & GitHub</li>
+          <li>Trello</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="werkervaring">
+      <div class="container">
+        <h2>Werkervaring</h2>
+        <ul>
+          <li><strong>Student</strong> – Techniek College Rotterdam, niveau 4 opleiding Softwaredeveloper.</li>
+          <li>Ik heb nog geen professionele werkervaring, maar werk momenteel aan persoonlijke en schoolprojecten.</li>
+          <li>Daarnaast werk ik parttime als bezorger.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projecten">
+      <div class="container">
+        <h2>Projecten</h2>
+        <div class="projects-grid">
+          <article>
+            <h3>Portfolio Website</h3>
+            <p>Mijn eigen portfolio website, gemaakt met HTML, SCSS en JavaScript.</p>
+            <a href="https://github.com/charlesmusukwa/portfolio" target="_blank" rel="noopener">Bekijk op GitHub</a>
+          </article>
+          <article>
+            <h3>To-do App</h3>
+            <p>Een eenvoudige takenlijst-app met JavaScript en localStorage.</p>
+            <a href="https://github.com/charlesmusukwa/todo-app" target="_blank" rel="noopener">Bekijk op GitHub</a>
+          </article>
+          <article>
+            <h3>Weerapp</h3>
+            <p>Een weerapplicatie die actuele gegevens ophaalt via een API. Gemaakt met HTML, CSS en JavaScript.</p>
+            <a href="https://github.com/charlesmusukwa/weather-app" target="_blank" rel="noopener">Bekijk op GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contacteer Mij</h2>
+        <form id="contactForm" name="contactForm" method="post" action="#">
+          <label for="name">Naam:</label>
+          <input type="text" id="name" name="name" required aria-required="true">
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+
+          <label for="message">Bericht:</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+          <button type="submit">Verstuur</button>
+        </form>
+        <p id="formMessage" role="alert" aria-live="polite"></p>
+
+        <div class="contact-info">
+          <p><strong>Telefoon:</strong> <a href="tel:+3165363733">06 5363 733</a></p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/csm.808" target="_blank" rel="noopener">@csm.808</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/charlesmusukwa" target="_blank" rel="noopener">linkedin.com/in/charlesmusukwa</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/charlesmusukwa" target="_blank" rel="noopener">github.com/charlesmusukwa</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Charles Musukwa | Alle rechten voorbehouden</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
