@@ -1,0 +1,243 @@
+
+$font-main: 'Poppins', sans-serif;
+$color-bg: #f7f7f7;
+$color-text: #222;
+$color-primary: #9a299a;
+$color-secondary: #f4a261;
+$color-white: #fff;
+$color-dark: #333;
+$color-accent: #a11ebb;
+
+body {
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  color: $color-text;
+  background: $color-bg;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: $color-primary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 0;
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      color: $color-white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: 0.3s ease;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 80px; // om ruimte te maken voor fixed header
+}
+
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: $color-white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+// 🌈 Hero Section
+.hero {
+  background: linear-gradient(135deg, $color-primary, $color-secondary);
+  color: $color-white;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+
+// 🧠 Skills Grid
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    background: $color-primary;
+    color: $color-white;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      background: $color-accent;
+    }
+  }
+}
+
+// 💼 Projecten Grid
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+
+  article {
+    background: $color-bg;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    h3 {
+      color: $color-primary;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      color: $color-accent;
+      font-weight: 500;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// 📬 Contactformulier
+#contact {
+  background: #f4f4f4;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+
+    input,
+    textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      width: 100%;
+      resize: vertical;
+    }
+
+    button {
+      background: $color-primary;
+      color: $color-white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: $color-accent;
+      }
+    }
+  }
+
+  .contact-info {
+    text-align: left;
+    p {
+      margin: 5px 0;
+    }
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// ⚡ Footer
+footer {
+  background: $color-primary;
+  color: $color-white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+// 📱 Responsive
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 25px;
+  }
+
+  section {
+    padding: 80px 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+}
